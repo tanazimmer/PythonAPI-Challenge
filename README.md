@@ -74,15 +74,16 @@ Now let's use your skills in working with weather data to plan future vacations.
 * Create a heat map that displays the humidity for every city from the part I of the homework.
 
 * Narrow down the DataFrame to find your ideal weather condition.
-``ideal_df = weather_df.loc[(weather_df["Max Temp"] > 65) & (weather_df['Max Temp'] < 77) & 
-(weather_df["Cloudiness"] == 0) & (weather_df['Humidity'] < 50) &(weather_df['Wind Speed'] < 15), :]``
+```
+ideal_df = weather_df.loc[(weather_df["Max Temp"] > 65) & (weather_df['Max Temp'] < 77) & (weather_df["Cloudiness"] == 0) & (weather_df['Humidity'] < 50) &(weather_df['Wind Speed'] < 15), :]
+```
 
 * Using Google Places API to find the first hotel for each city located within 5000 meters of your coordinates.
-``  "radius": 5000,
+```  "radius": 5000,
     "types": "lodging",
     "keyword": "Hotel",
     "key": gkey
-``
+```
     
 * Plot the hotels on top of the humidity heatmap with each pin containing the **Hotel Name**, **City**, and **Country**.
 
