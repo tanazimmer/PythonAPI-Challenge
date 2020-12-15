@@ -1,6 +1,6 @@
 # Python API Homework - What's the Weather Like?
 
-## Primary Coding Language and skills: Python in Jupyter Notebook, API calls
+## Primary Coding Language and skills: Python in Jupyter Notebook, API calls, Matplotlib
 
 Whether financial, political, or social -- data's true power lies in its ability to answer questions definitively. So let's take what you've learned about Python requests, APIs, and JSON traversals to answer a fundamental question: "What's the weather like as we approach the equator?"
 
@@ -10,41 +10,41 @@ But, if pressed, how would you **prove** it?
 
 ![Equator](Images/equatorsign.png)
 
-### Before You Begin
-
-1. Create a new repository for this project called `python-api-challenge`. **Do not add this homework to an existing repository**.
-
-2. Clone the new repository to your computer.
-
-3. Inside your local git repository, create a directory for both of the  Python Challenges. Use folder names corresponding to the challenges: **WeatherPy**.
-
-4. Inside the folder that you just created, add new files called `WeatherPy.ipynb` and `VacationPy.ipynb`. These will be the main scripts to run for each analysis.
-
-5. Push the above changes to GitHub.
-
-## Part I - WeatherPy
-
-In this example, you'll be creating a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator. To accomplish this, you'll be utilizing a [simple Python library](https://pypi.python.org/pypi/citipy), the [OpenWeatherMap API](https://openweathermap.org/api), and a little common sense to create a representative model of weather across world cities.
+### Part I - WeatherPy
+####Challenge:
+Create a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator. Utilize [simple Python library](https://pypi.python.org/pypi/citipy) and the [OpenWeatherMap API](https://openweathermap.org/api).
 
 Your first requirement is to create a series of scatter plots to showcase the following relationships:
 
 * Temperature (F) vs. Latitude
+![lat v temp](https://github.com/tanazimmer/PythonAPI-Challenge/blob/master/output_data/lat_v_maxtemp.png)
 * Humidity (%) vs. Latitude
+![lat v hum](https://github.com/tanazimmer/PythonAPI-Challenge/blob/master/output_data/lat_v_humidity.png)
 * Cloudiness (%) vs. Latitude
+![lat v cloudiness](https://github.com/tanazimmer/PythonAPI-Challenge/blob/master/output_data/lat_v_cloudiness.png)
 * Wind Speed (mph) vs. Latitude
+![lat v wind](https://github.com/tanazimmer/PythonAPI-Challenge/blob/master/output_data/lat_v_wind.png)
 
 After each plot add a sentence or too explaining what the code is and analyzing.
 
 Your second requirement is to run linear regression on each relationship, only this time separating them into Northern Hemisphere (greater than or equal to 0 degrees latitude) and Southern Hemisphere (less than 0 degrees latitude):
 
 * Northern Hemisphere - Temperature (F) vs. Latitude
+![lat v ntemp](https://github.com/tanazimmer/PythonAPI-Challenge/blob/master/output_data/lat_v_temp_northern.png)
 * Southern Hemisphere - Temperature (F) vs. Latitude
+![lat v stemp](https://github.com/tanazimmer/PythonAPI-Challenge/blob/master/output_data/lat_v_temp_southern.png)
 * Northern Hemisphere - Humidity (%) vs. Latitude
+![lat v nhum](https://github.com/tanazimmer/PythonAPI-Challenge/blob/master/output_data/lat_v_hum_northern.png)
 * Southern Hemisphere - Humidity (%) vs. Latitude
+![lat v shum](https://github.com/tanazimmer/PythonAPI-Challenge/blob/master/output_data/lat_v_hum_southern.png)
 * Northern Hemisphere - Cloudiness (%) vs. Latitude
+![lat v ncloud](https://github.com/tanazimmer/PythonAPI-Challenge/blob/master/output_data/lat_v_cloud_northern.png)
 * Southern Hemisphere - Cloudiness (%) vs. Latitude
+![lat v scloud](https://github.com/tanazimmer/PythonAPI-Challenge/blob/master/output_data/lat_v_cloud_southern.png)
 * Northern Hemisphere - Wind Speed (mph) vs. Latitude
+![lat v nwind](https://github.com/tanazimmer/PythonAPI-Challenge/blob/master/output_data/lat_v_wind_northern.png)
 * Southern Hemisphere - Wind Speed (mph) vs. Latitude
+![lat v swind](https://github.com/tanazimmer/PythonAPI-Challenge/blob/master/output_data/lat_v_wind_southern.png)
 
 After each pair of plots explain what the linear regression is modeling such as any relationships you notice and any other analysis you may have.
 
@@ -55,7 +55,7 @@ Your final notebook must:
 * Include a print log of each city as it's being processed with the city number and city name.
 * Save a CSV of all retrieved data and a PNG image for each scatter plot.
 
-### Part II - VacationPy
+#### Part II - VacationPy
 
 Now let's use your skills in working with weather data to plan future vacations. Use jupyter-gmaps and the Google Places API for this part of the assignment.
 
