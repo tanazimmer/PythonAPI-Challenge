@@ -17,12 +17,16 @@ Create a Python script to visualize the weather of 500+ cities across the world 
 Your first requirement is to create a series of scatter plots to showcase the following relationships:
 
 * Temperature (F) vs. Latitude
+
 ![lat v temp](https://github.com/tanazimmer/PythonAPI-Challenge/blob/master/output_data/lat_v_maxtemp.png)
 * Humidity (%) vs. Latitude
+
 ![lat v hum](https://github.com/tanazimmer/PythonAPI-Challenge/blob/master/output_data/lat_v_humidity.png)
 * Cloudiness (%) vs. Latitude
+
 ![lat v cloudiness](https://github.com/tanazimmer/PythonAPI-Challenge/blob/master/output_data/lat_v_cloudiness.png)
 * Wind Speed (mph) vs. Latitude
+
 ![lat v wind](https://github.com/tanazimmer/PythonAPI-Challenge/blob/master/output_data/lat_v_wind.png)
 
 After each plot add a sentence or too explaining what the code is and analyzing.
@@ -30,20 +34,28 @@ After each plot add a sentence or too explaining what the code is and analyzing.
 Your second requirement is to run linear regression on each relationship, only this time separating them into Northern Hemisphere (greater than or equal to 0 degrees latitude) and Southern Hemisphere (less than 0 degrees latitude):
 
 * Northern Hemisphere - Temperature (F) vs. Latitude
+
 ![lat v ntemp](https://github.com/tanazimmer/PythonAPI-Challenge/blob/master/output_data/lat_v_temp_northern.png)
 * Southern Hemisphere - Temperature (F) vs. Latitude
+
 ![lat v stemp](https://github.com/tanazimmer/PythonAPI-Challenge/blob/master/output_data/lat_v_temp_southern.png)
 * Northern Hemisphere - Humidity (%) vs. Latitude
+
 ![lat v nhum](https://github.com/tanazimmer/PythonAPI-Challenge/blob/master/output_data/lat_v_hum_northern.png)
 * Southern Hemisphere - Humidity (%) vs. Latitude
+
 ![lat v shum](https://github.com/tanazimmer/PythonAPI-Challenge/blob/master/output_data/lat_v_hum_southern.png)
 * Northern Hemisphere - Cloudiness (%) vs. Latitude
+
 ![lat v ncloud](https://github.com/tanazimmer/PythonAPI-Challenge/blob/master/output_data/lat_v_cloud_northern.png)
 * Southern Hemisphere - Cloudiness (%) vs. Latitude
+
 ![lat v scloud](https://github.com/tanazimmer/PythonAPI-Challenge/blob/master/output_data/lat_v_cloud_southern.png)
 * Northern Hemisphere - Wind Speed (mph) vs. Latitude
+
 ![lat v nwind](https://github.com/tanazimmer/PythonAPI-Challenge/blob/master/output_data/lat_v_wind_northern.png)
 * Southern Hemisphere - Wind Speed (mph) vs. Latitude
+
 ![lat v swind](https://github.com/tanazimmer/PythonAPI-Challenge/blob/master/output_data/lat_v_wind_southern.png)
 
 After each pair of plots explain what the linear regression is modeling such as any relationships you notice and any other analysis you may have.
